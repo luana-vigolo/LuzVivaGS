@@ -129,3 +129,45 @@ a:hover { text-decoration: underline; }
 @keyframes pulsar {
     50% { opacity: .4; }
 }
+
+main {
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: clamp(28px, 3vw, 55px);
+    background: #1d2129;
+    border: 1px solid #2a303b;
+    border-radius: 14px;
+    text-align: center;
+    scroll-margin-top: 130px;
+    transition: .25s;
+}
+.secao:hover {
+    transform: translateY(-5px);
+    border-color: #f6b73c;
+    box-shadow: 0 12px 24px #f6b73c25;
+}
+.etiqueta {
+    color: #a9afbc;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.secao h2 {
+    color: #f6b73c;
+    font: clamp(34px, 3vw, 52px) "Merriweather", serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.secao p { max-width: 1200px; font-size: clamp(17px, 1vw, 21px); }
+.icone { width: clamp(70px, 5vw, 96px); }
