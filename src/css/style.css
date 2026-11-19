@@ -171,3 +171,43 @@ main {
 }
 .secao p { max-width: 1200px; font-size: clamp(17px, 1vw, 21px); }
 .icone { width: clamp(70px, 5vw, 96px); }
+
+.cartoes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 12px;
+}
+.cartao {
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 22px;
+    background: #2a303b;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px #0007;
+    font-size: clamp(15px, .9vw, 18px);
+    transition: .25s;
+}
+.cartao h3 {
+    color: #f6b73c;
+    font: clamp(16px, 1vw, 20px) "Merriweather", serif;
+    text-transform: uppercase;
+}
+.cartao:hover {
+    transform: translateY(-6px);
+    background: #f6b73c;
+    color: #12141a;
+}
+.cartao:hover h3 { color: #12141a; }
+.foto {
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
