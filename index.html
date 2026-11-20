@@ -202,3 +202,67 @@
         <div class="slide-pontos"></div>
       </div>
     </section>
+
+    <!-- SEÇÃO 7 - RELATAR OCORRÊNCIA -->
+    <section class="secao" id="relatar">
+      <span class="etiqueta">Seção 7</span>
+      <h2>Relatar um problema</h2>
+
+      <p>
+        Encontrou um poste apagado ou uma rua com pouca iluminação?
+        Ajude a melhorar nossa cidade registrando uma ocorrência.
+      </p>
+
+      <form id="formulario">
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome"
+                 placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="local">Local da ocorrência</label>
+          <input type="text" id="local" name="local"
+                 placeholder="Rua, bairro ou endereço" required>
+        </div>
+
+        <div class="campo">
+          <label for="tipo">Tipo de problema</label>
+          <select id="tipo" name="tipo" required>
+            <option value="">Selecione uma opção</option>
+            <option value="Poste apagado">Poste apagado</option>
+            <option value="Luz piscando">Luz piscando</option>
+            <option value="Iluminação fraca">Iluminação fraca</option>
+            <option value="Outro">Outro problema</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição do problema</label>
+          <textarea id="descricao" name="descricao"
+                    rows="4" placeholder="Descreva o que aconteceu..."
+                    required></textarea>
+        </div>
+
+        <button type="submit" class="botao-enviar">
+          Enviar ocorrência
+        </button>
+
+        <p id="mensagem"></p>
+      </form>
+
+      <div id="lista-ocorrencias">
+        <h3>Ocorrências registradas</h3>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <h2>LUZ VIVA</h2>
+    <p>Conectando tecnologia e participação cidadã.</p>
+    <p>Projeto acadêmico de iluminação pública inteligente.</p>
+    <span>© 2026 Luz Viva - Todos os direitos reservados.</span>
+  </footer>
+</body>
+</html>
